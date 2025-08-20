@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cat Lover Paradise</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(120deg, #fdf6f0, #ffe6f0);
+      color: #333;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: #ffb3c6;
+      padding: 2rem 1rem;
+      text-align: center;
+      animation: fadeInDown 1s ease;
+    }
+
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3rem;
+      color: white;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 2rem;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+    }
+
+    .about {
+      padding: 2rem;
+      text-align: center;
+      background-color: #fff0f5;
+      animation: fadeIn 2s ease;
+    }
+
+    .about h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #ff69b4;
+    }
+
+    .about p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+    }
+
+    footer {
+      background: #ffb3c6;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      .about h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🐾 Cat Lover Paradise 🐾</h1>
+  </header>
+
+  <section class="gallery">
+    <img src="https://www.shutterstock.com/image-photo/kitten-breed-ragdoll-pink-flowers-600nw-1908122626.jpg">
+    <img src="https://wallpapers.com/images/hd/beautiful-cats-1000-x-1500-picture-7s286i4ukmu4j30y.jpg">
+    <img src="https://hips.hearstapps.com/hmg-prod/images/white-cat-breeds-kitten-in-grass-67bf648a54a3b.jpg?crop=0.8888888888888888xw:1xh;center,top&resize=1200:*">
+    <img src="https://www.purina.in/sites/default/files/2023-05/feast.png">
+   
+  </section>
+
+  <section class="about">
+    <h2>Why We Love Cats</h2>
+    <p>
+      Cats are more than just pets—they're fluffy, sassy companions that bring joy, calmness, and love into our lives. Whether they're napping in sunbeams or chasing lasers, every cat is a purrfect little piece of magic. 🐱💖
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Cat Lover Paradise | All cats are welcome here 🐾
+  </footer>
+
+</body>
+</html>
